@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CSV Examples</title></head>
+    <body>
+        <h3>CSV Example - Read Write Examples</h3>
+        <ul>
+            <li>Write Operation
+                <ul>
+                    <li>
+                        <a href="{% url 'csv_simple_write' %}">Simple CSV Write Operation</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'csv_dictionary_write' %}">Writing CSV File From a Dictionary</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'csv_database_write' %}">Database Data CSV Write Operation</a>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>Read Operation
+                <ul>
+                    <li>
+                        <a href="{% url 'csv_simple_read' %}">Simple CSV Read Operation</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        {{csv_data}}
+        {% if csv_data %}
+        sad
+            {{csv_data}}
+        {% endif %}
+    </body>
+</html>
